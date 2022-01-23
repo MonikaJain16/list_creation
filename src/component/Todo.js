@@ -92,7 +92,7 @@ const Todo = () => {
                 <figcaption>Add Your List Items ✌</figcaption>
             </figure>
             <div className='addItems'>
-                <input id="input_item" type="text" placeholder='✍ Add Item'  className='form-control' value={inputData} onKeyPress={(e)=>keyPressListener(e)} onChange={(e)=>{setInputData(e.target.value)}} /> 
+                <input id="input_item" type="text" placeholder='✍ Add Item'  className='form-control' value={inputData}  onChange={(e)=>{setInputData(e.target.value)}} /> 
                 {toggleButton ? (<i className="far fa-edit add-btn" onClick={addItem}></i>) : (<i className="fa fa-plus add-btn" onClick={addItem}></i>)}
             </div>
             <div className='showItems'>
